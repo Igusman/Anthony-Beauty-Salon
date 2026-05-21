@@ -1,0 +1,45 @@
+.switcher {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background: rgba(201,168,76,0.1);
+  border-radius: 8px;
+  padding: 0.4rem;
+  border: 1px solid var(--gold);
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  color: var(--white);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.05em;
+}
+
+.btn:hover {
+  background: rgba(201,168,76,0.2);
+  color: var(--gold);
+}
+
+.btn.active {
+  background: var(--gold);
+  color: var(--black);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .switcher {
+    gap: 0.3rem;
+    padding: 0.3rem;
+  }
+
+  .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+}

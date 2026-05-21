@@ -1,0 +1,43 @@
+.section {
+  padding: 6rem 5%;
+  background: var(--black);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--dark-2);
+  border: 1px solid rgba(201,168,76,0.1);
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stars {
+  color: var(--gold);
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.text {
+  font-size: 0.88rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.7);
+  font-style: italic;
+  flex: 1;
+}
+
+.name {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+}

@@ -1,0 +1,131 @@
+.section {
+  padding: 6rem 5%;
+  background: var(--black);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imageCol {
+  display: flex;
+  justify-content: center;
+}
+
+.imageWrap {
+  position: relative;
+  width: 380px;
+  max-width: 100%;
+  aspect-ratio: 1;
+  background: var(--dark-2);
+  border: 1px solid rgba(201,168,76,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageWrap::before {
+  content: '';
+  position: absolute;
+  inset: -12px;
+  border: 1px solid rgba(201,168,76,0.1);
+  z-index: -1;
+}
+
+.logo {
+  width: 65%;
+  filter: drop-shadow(0 0 40px rgba(201,168,76,0.25));
+}
+
+.badge {
+  position: absolute;
+  bottom: -1.5rem;
+  right: -1.5rem;
+  background: var(--gold);
+  color: var(--black);
+  padding: 1.2rem 1.4rem;
+  text-align: center;
+}
+
+.badgeNum {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.badgeTxt {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.textCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  text-align: left !important;
+}
+
+.leftDiv {
+  margin-left: 0 !important;
+}
+
+.para {
+  font-size: 0.88rem;
+  line-height: 1.9;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 1.2rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.stat {
+  border-left: 2px solid var(--gold);
+  padding-left: 1rem;
+}
+
+.statNum {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--gold);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-top: 0.3rem;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .section {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .imageWrap {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .left { text-align: center !important; }
+  .leftDiv { margin: 0 auto !important; }
+}
