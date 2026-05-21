@@ -2,12 +2,18 @@ import styles from './Gallery.module.css'
 import { useContext } from 'react'
 import { LanguageContext } from '../context/LanguageContext'
 import { translations } from '../i18n/translations'
+import coloringImg from '../assets/Screenshot 2026-05-21 131332.png'
+import bridalImg from '../assets/Screenshot 2026-05-21 131408.png'
+import haircutImg from '../assets/Screenshot 2026-05-21 131435.png'
+import blowdryImg from '../assets/Screenshot 2026-05-21 131651.png'
+import treatmentImg from '../assets/Screenshot 2026-05-21 131552.png'
 
 const galleryImages = [
-  { src: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1200&q=80&auto=format&fit=crop', altKey: 'coloring' },
-  { src: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80&auto=format&fit=crop', altKey: 'haircut' },
-  { src: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1200&q=80&auto=format&fit=crop', altKey: 'blowdry' },
-  { src: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=80&auto=format&fit=crop', altKey: 'bridal' },
+  { src: coloringImg, altKey: 'coloring' },
+  { src: bridalImg, altKey: 'bridal' },
+  { src: haircutImg, altKey: 'haircut' },
+  { src: blowdryImg, altKey: 'blowdry' },
+  { src: treatmentImg, altKey: 'treatment' },
 ]
 
 export default function Gallery() {

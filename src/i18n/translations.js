@@ -10,7 +10,7 @@ export const translations = {
     },
     hero: {
       tagline: 'כאן הסגנון פוגש אלגנטיות',
-      sub: 'חיתוכים ייעודיים · טיפול וזקן · סטיילינג',
+      sub: 'חיתוך וסטיילינג · טיפול שיער · צביעת שיער · חבילת VIP',
       bookAppointment: 'הזמן פגישה',
       ourServices: 'שירותים שלנו',
     },
@@ -39,7 +39,7 @@ export const translations = {
     },
     about: {
       subtitle: 'הסיפור שלנו',
-      title: 'על אודות סלון היופי של אנטוני',
+      title: 'סלון היופי של אנטוני',
       desc1: 'הוקם בתשוקה לדיוק וסגנון, סלון היופי של אנטוני הוא סטנדרט לטיפול יוקרתי בעיר למעלה מ-15 שנה. כל ביקור מעוצב להיות חוויה - לא רק חיתוך.',
       desc2: 'קבוצת הסטיליסטים המומחים שלנו משלבת טכניקות קלאסיות עם מגמות מודרניות כדי להעניק תוצאות המחוות למצופה. אנחנו מאמינים שסגנון גדול מתחיל בטיפול גדול.',
       yearsExperience: 'שנות ניסיון',
@@ -51,6 +51,7 @@ export const translations = {
       subtitle: 'העבודה שלנו',
       title: 'גלריה',
       coloringAlt: 'צביעת שיער',
+      treatmentAlt: 'שיקום שיער',
       haircutAlt: 'חיתוך שיער',
       blowdryAlt: 'פן ועיצוב',
       bridalAlt: 'תסרוקת כלה',
@@ -110,7 +111,7 @@ export const translations = {
     },
     hero: {
       tagline: 'Where Style Meets Elegance',
-      sub: 'Premium haircuts · Grooming · Styling',
+      sub: 'Haircut & styling · Hair treatment · Hair coloring · VIP package',
       bookAppointment: 'Book Appointment',
       ourServices: 'Our Services',
     },
@@ -139,7 +140,7 @@ export const translations = {
     },
     about: {
       subtitle: 'Our Story',
-      title: 'About Anthony Beauty Salon',
+      title: 'Anthony Beauty Salon',
       desc1: 'Founded with a passion for precision and style, Anthony Beauty Salon has been setting the standard for luxury grooming in the city for over 15 years. Every visit is crafted to be an experience — not just a haircut.',
       desc2: 'Our team of expert stylists combines classic techniques with modern trends to deliver results that exceed expectations. We believe great style starts with great care.',
       yearsExperience: 'Years Experience',
@@ -151,6 +152,7 @@ export const translations = {
       subtitle: 'Our Work',
       title: 'Gallery',
       coloringAlt: 'Hair coloring',
+      treatmentAlt: 'Hair restoration',
       haircutAlt: 'Haircut and styling',
       blowdryAlt: 'Blow dry and styling',
       bridalAlt: 'Bridal hairstyling',
@@ -210,7 +212,7 @@ export const translations = {
     },
     hero: {
       tagline: 'Donde el Estilo se Encuentra con la Elegancia',
-      sub: 'Cortes premium · Aseo · Estilismo',
+      sub: 'Corte y peinado · Tratamiento capilar · Coloración · Paquete VIP',
       bookAppointment: 'Reservar Cita',
       ourServices: 'Nuestros Servicios',
     },
@@ -239,7 +241,7 @@ export const translations = {
     },
     about: {
       subtitle: 'Nuestra Historia',
-      title: 'Acerca del Salón de Belleza Anthony',
+      title: 'Salón de Belleza Anthony',
       desc1: 'Fundado con una pasión por la precisión y el estilo, el Salón de Belleza Anthony ha sido el estándar de aseo de lujo en la ciudad durante más de 15 años. Cada visita está diseñada para ser una experiencia — no solo un corte.',
       desc2: 'Nuestro equipo de estilistas expertos combina técnicas clásicas con tendencias modernas para ofrecer resultados que superan las expectativas. Creemos que el gran estilo comienza con el gran cuidado.',
       yearsExperience: 'Años de Experiencia',
@@ -251,6 +253,7 @@ export const translations = {
       subtitle: 'Nuestro Trabajo',
       title: 'Galería',
       coloringAlt: 'Coloración de cabello',
+      treatmentAlt: 'Restauración capilar',
       haircutAlt: 'Corte y estilo',
       blowdryAlt: 'Brushing y peinado',
       bridalAlt: 'Peinado de novia',

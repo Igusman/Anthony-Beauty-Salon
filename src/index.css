@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +17,7 @@
   --gray: #888888;
   --gray-light: #f5f5f5;
   --font-heading: 'Cormorant Garamond', serif;
-  --font-body: 'Montserrat', sans-serif;
+  --font-body: 'Source Sans 3', sans-serif;
   --contrast-filter: contrast(1);
 }
 
@@ -25,6 +27,8 @@ html {
 
 body {
   font-family: var(--font-body);
+  font-feature-settings: 'liga' 1, 'kern' 1;
+  text-rendering: optimizeLegibility;
   background-color: var(--black);
   color: var(--white);
   overflow-x: hidden;

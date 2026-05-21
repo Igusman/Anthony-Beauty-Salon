@@ -68,14 +68,7 @@
 .textCol {
   display: flex;
   flex-direction: column;
-}
-
-.left {
-  text-align: left !important;
-}
-
-.leftDiv {
-  margin-left: 0 !important;
+  align-items: center;
 }
 
 .para {
@@ -83,6 +76,7 @@
   line-height: 1.9;
   color: rgba(255,255,255,0.65);
   margin-bottom: 1.2rem;
+  text-align: center;
 }
 
 .stats {
@@ -126,6 +120,4 @@
     margin: 0 auto;
   }
 
-  .left { text-align: center !important; }
-  .leftDiv { margin: 0 auto !important; }
 }

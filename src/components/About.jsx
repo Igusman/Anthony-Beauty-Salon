@@ -5,9 +5,8 @@ import { LanguageContext } from '../context/LanguageContext'
 import { translations } from '../i18n/translations'
 
 const stats = [
-  { number: '15+', key: 'yearsExperience' },
+  { number: '10+', key: 'yearsExperience' },
   { number: '5K+', key: 'happyClients' },
-  { number: '8', key: 'stylists' },
   { number: '4.9★', key: 'rating' },
 ]
 
@@ -20,7 +19,7 @@ export default function About() {
         <div className={styles.imageWrap}>
           <img src={logo} alt="Anthony Beauty Salon" className={styles.logo} />
           <div className={styles.badge}>
-            <span className={styles.badgeNum}>15+</span>
+            <span className={styles.badgeNum}>10+</span>
             <span className={styles.badgeTxt}>{t.yearsExperience}</span>
           </div>
         </div>
@@ -28,8 +27,8 @@ export default function About() {
 
       <div className={styles.textCol}>
         <p className="section-subtitle">{t.subtitle}</p>
-        <h2 className={`section-title ${styles.left}`}>{t.title}</h2>
-        <div className={`gold-divider ${styles.leftDiv}`} />
+        <h2 className="section-title">{t.title}</h2>
+        <div className="gold-divider" />
         <p className={styles.para}>{t.desc1}</p>
         <p className={styles.para}>{t.desc2}</p>
         <div className={styles.stats}>
