@@ -40,8 +40,7 @@ export const translations = {
     about: {
       subtitle: 'הסיפור שלנו',
       title: 'סלון היופי של אנטוני',
-      desc1: 'הוקם בתשוקה לדיוק וסגנון, סלון היופי של אנטוני הוא סטנדרט לטיפול יוקרתי בעיר למעלה מ-15 שנה. כל ביקור מעוצב להיות חוויה - לא רק חיתוך.',
-      desc2: 'קבוצת הסטיליסטים המומחים שלנו משלבת טכניקות קלאסיות עם מגמות מודרניות כדי להעניק תוצאות המחוות למצופה. אנחנו מאמינים שסגנון גדול מתחיל בטיפול גדול.',
+      desc1: 'הוקם בתשוקה לדיוק וסגנון, סלון היופי של אנטוני הוא סטנדרט לטיפול יוקרתי בעיר למעלה מ-10 שנה. כל ביקור מעוצב להיות חוויה - לא רק חיתוך, אלא גם עיצוב ושיקום השיער.',
       yearsExperience: 'שנות ניסיון',
       happyClients: 'לקוחים שמחים',
       stylists: 'סטיליסטיות מומחות',
@@ -141,8 +140,7 @@ export const translations = {
     about: {
       subtitle: 'Our Story',
       title: 'Anthony Beauty Salon',
-      desc1: 'Founded with a passion for precision and style, Anthony Beauty Salon has been setting the standard for luxury grooming in the city for over 15 years. Every visit is crafted to be an experience — not just a haircut.',
-      desc2: 'Our team of expert stylists combines classic techniques with modern trends to deliver results that exceed expectations. We believe great style starts with great care.',
+      desc1: 'Founded with a passion for precision and style, Anthony Beauty Salon has been setting the standard for luxury grooming in the city for over 10 years. Every visit is crafted to be an experience — not just a haircut, but also styling and hair restoration.',
       yearsExperience: 'Years Experience',
       happyClients: 'Happy Clients',
       stylists: 'Expert Stylists',
@@ -242,8 +240,7 @@ export const translations = {
     about: {
       subtitle: 'Nuestra Historia',
       title: 'Salón de Belleza Anthony',
-      desc1: 'Fundado con una pasión por la precisión y el estilo, el Salón de Belleza Anthony ha sido el estándar de aseo de lujo en la ciudad durante más de 15 años. Cada visita está diseñada para ser una experiencia — no solo un corte.',
-      desc2: 'Nuestro equipo de estilistas expertos combina técnicas clásicas con tendencias modernas para ofrecer resultados que superan las expectativas. Creemos que el gran estilo comienza con el gran cuidado.',
+      desc1: 'Fundado con una pasión por la precisión y el estilo, el Salón de Belleza Anthony ha sido el estándar de aseo de lujo en la ciudad durante más de 10 años. Cada visita está diseñada para ser una experiencia — no solo un corte, sino también peinado y restauración capilar.',
       yearsExperience: 'Años de Experiencia',
       happyClients: 'Clientes Felices',
       stylists: 'Estilistas Expertos',

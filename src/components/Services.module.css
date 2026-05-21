@@ -44,6 +44,7 @@
 
 .icon {
   font-size: 2rem;
+  line-height: 1;
 }
 
 .cardTitle {
@@ -60,11 +61,3 @@
   flex: 1;
 }
 
-.price {
-  font-size: 0.78rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--gold);
-  font-weight: 500;
-  margin-top: 0.5rem;
-}

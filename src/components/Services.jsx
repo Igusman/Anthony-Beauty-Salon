@@ -5,34 +5,28 @@ import { translations } from '../i18n/translations'
 
 const servicesData = [
   {
-    icon: '✂️',
-    key: 'haircut',
-    price: 35,
-  },
-  {
-    icon: '🎨',
-    key: 'coloring',
-    price: 60,
-  },
-  {
-    icon: '🌬️',
-    key: 'blowdry',
-    price: 55,
-  },
-  {
-    icon: '👰',
-    key: 'bridal',
-    price: 90,
-  },
-  {
     icon: '💇‍♀️',
-    key: 'treatment',
-    price: 50,
+    key: 'haircut',
   },
   {
-    icon: '👑',
+    icon: '✨',
+    key: 'coloring',
+  },
+  {
+    icon: '🌸',
+    key: 'blowdry',
+  },
+  {
+    icon: '👰‍♀️',
+    key: 'bridal',
+  },
+  {
+    icon: '💆‍♀️',
+    key: 'treatment',
+  },
+  {
+    icon: '💎',
     key: 'vip',
-    price: 149,
   },
 ]
 
@@ -71,7 +65,6 @@ export default function Services() {
               <span className={styles.icon}>{s.icon}</span>
               <h3 className={styles.cardTitle}>{title}</h3>
               <p className={styles.cardDesc}>{desc}</p>
-              <span className={styles.price}>{t.from}{s.price}$</span>
             </div>
           )
         })}

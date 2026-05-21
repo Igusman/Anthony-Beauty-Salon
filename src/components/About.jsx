@@ -30,7 +30,6 @@ export default function About() {
         <h2 className="section-title">{t.title}</h2>
         <div className="gold-divider" />
         <p className={styles.para}>{t.desc1}</p>
-        <p className={styles.para}>{t.desc2}</p>
         <div className={styles.stats}>
           {stats.map(s => (
             <div key={s.key} className={styles.stat}>
