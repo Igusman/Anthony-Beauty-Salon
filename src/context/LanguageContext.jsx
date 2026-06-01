@@ -4,17 +4,28 @@ export const LanguageContext = createContext()
 
 export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState(() => {
-    const saved = localStorage.getItem('language')
-    if (saved === 'he' || saved === 'en' || saved === 'es') {
-      return saved
+    try {
+      const saved = localStorage.getItem('language')
+      if (saved === 'he' || saved === 'en' || saved === 'es') {
+        return saved
+      }
+    } catch {
+      // Ignore storage access failures and fall back to the default language.
     }
     return 'he'
   })
 
   useEffect(() => {
-    document.documentElement.lang = language
-    document.documentElement.dir = language === 'he' ? 'rtl' : 'ltr'
-    localStorage.setItem('language', language)
+    if (typeof document !== 'undefined') {
+      document.documentElement.lang = language
+      document.documentElement.dir = language === 'he' ? 'rtl' : 'ltr'
+    }
+
+    try {
+      localStorage.setItem('language', language)
+    } catch {
+      // Ignore storage access failures.
+    }
   }, [language])
 
   const changeLanguage = (lang) => {

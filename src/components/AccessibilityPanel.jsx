@@ -8,23 +8,29 @@ export default function AccessibilityPanel() {
 
   const handleFontSize = (value) => {
     updateAccessibility({ fontSize: value })
-    document.documentElement.style.fontSize = `${value}%`
+    if (typeof document !== 'undefined') {
+      document.documentElement.style.fontSize = `${value}%`
+    }
   }
 
   const toggleContrast = () => {
     const newContrast = !accessibility.contrast
     updateAccessibility({ contrast: newContrast })
-    document.documentElement.style.setProperty('--contrast-filter', newContrast ? 'contrast(1.5)' : 'contrast(1)')
+    if (typeof document !== 'undefined') {
+      document.documentElement.style.setProperty('--contrast-filter', newContrast ? 'contrast(1.5)' : 'contrast(1)')
+    }
   }
 
   const toggleDyslexia = () => {
     const newDyslexia = !accessibility.dyslexiaFont
     updateAccessibility({ dyslexiaFont: newDyslexia })
-    const root = document.documentElement
-    if (newDyslexia) {
-      root.style.setProperty('--font-body', "'Comic Sans MS', cursive")
-    } else {
-      root.style.setProperty('--font-body', "'Montserrat', sans-serif")
+    if (typeof document !== 'undefined') {
+      const root = document.documentElement
+      if (newDyslexia) {
+        root.style.setProperty('--font-body', "'Comic Sans MS', cursive")
+      } else {
+        root.style.setProperty('--font-body', "'Montserrat', sans-serif")
+      }
     }
   }
 
