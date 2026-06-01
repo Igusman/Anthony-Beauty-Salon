@@ -26,7 +26,7 @@ export default function Contact() {
     }
 
     const whatsappMessage = encodeURIComponent(messageParts.join('\n'))
-    const whatsappUrl = `https://wa.me/972587414769?text=${whatsappMessage}`
+    const whatsappUrl = `https://wa.me/972545260444?text=${whatsappMessage}`
 
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
   }
