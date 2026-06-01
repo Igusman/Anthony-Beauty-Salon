@@ -8,6 +8,29 @@ export default function Contact() {
   const t = translations[language]?.contact || translations.en.contact
   const services = translations[language]?.services || translations.en.services
 
+  const handleSubmit = (event) => {
+    event.preventDefault()
+
+    const formData = new FormData(event.currentTarget)
+    const fullName = formData.get('fullName')?.toString().trim()
+    const service = formData.get('service')?.toString().trim()
+    const optionalMessage = formData.get('message')?.toString().trim()
+
+    const messageParts = [
+      `היי אנטוני שמי ${fullName}`,
+      `אני מעוניינ/ת ב${service}`,
+    ]
+
+    if (optionalMessage) {
+      messageParts.push(`בנוסף, ${optionalMessage}`)
+    }
+
+    const whatsappMessage = encodeURIComponent(messageParts.join('\n'))
+    const whatsappUrl = `https://wa.me/972587414769?text=${whatsappMessage}`
+
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
+  }
+
   return (
     <section id="contact" className={styles.section}>
       <div className={styles.formCard}>
@@ -15,19 +38,19 @@ export default function Contact() {
         <h2 className="section-title">{t.title}</h2>
         <div className="gold-divider" />
 
-        <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
-          <input type="text" placeholder={t.fullName} required />
-          <input type="tel" placeholder={t.phone} required />
-          <select defaultValue="">
+        <form className={styles.form} onSubmit={handleSubmit}>
+          <input name="fullName" type="text" placeholder={t.fullName} required />
+          <input name="phone" type="tel" placeholder={t.phone} required />
+          <select name="service" defaultValue="" required>
             <option value="" disabled>{t.selectService}</option>
-            <option>{services.haircut}</option>
-            <option>{services.coloring}</option>
-            <option>{services.blowdry}</option>
-            <option>{services.bridal}</option>
-            <option>{services.treatment}</option>
-            <option>{services.vip}</option>
+            <option value={services.haircut}>{services.haircut}</option>
+            <option value={services.coloring}>{services.coloring}</option>
+            <option value={services.blowdry}>{services.blowdry}</option>
+            <option value={services.bridal}>{services.bridal}</option>
+            <option value={services.treatment}>{services.treatment}</option>
+            <option value={services.vip}>{services.vip}</option>
           </select>
-          <textarea rows="4" placeholder={t.message} />
+          <textarea name="message" rows="4" placeholder={t.message} />
           <button type="submit">{t.send}</button>
         </form>
       </div>
