@@ -59,7 +59,7 @@ export default function Contact() {
         <h3>{t.salon}</h3>
         <div className={styles.quickActions}>
           <a
-            href="https://maps.google.com/?q=123%20Luxury%20Street,%20Tel%20Aviv"
+            href="https://maps.google.com/?q=%D7%A9%D7%99%D7%98%D7%94%201%2F2%20%D7%9E%D7%A6%D7%A4%D7%94%20%D7%A8%D7%9E%D7%95%D7%9F"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.iconLink}
@@ -71,7 +71,7 @@ export default function Contact() {
             </svg>
           </a>
           <a
-            href="tel:+972501234567"
+            href="tel:+972545260444"
             className={styles.iconLink}
             aria-label={t.phone}
             title={t.phoneValue}

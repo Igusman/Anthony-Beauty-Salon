@@ -18,7 +18,6 @@ export default function Navbar() {
     { label: t.services, href: '#services' },
     { label: t.about, href: '#about' },
     { label: t.gallery, href: '#gallery' },
-    { label: t.contact, href: '#contact' },
   ]
 
   useEffect(() => {
