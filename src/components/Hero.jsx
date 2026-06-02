@@ -17,7 +17,7 @@ export default function Hero() {
         <p className={styles.sub}>{t.sub}</p>
         <div className={styles.actions}>
           <a href="#contact" className={styles.btnPrimary}>{t.bookAppointment}</a>
-          <a href="#services" className={styles.btnSecondary}>{t.ourServices}</a>
+          <a href="#gallery" className={styles.btnSecondary}>{t.gallery}</a>
         </div>
       </div>
       <a href="#services" className={styles.scroll}>

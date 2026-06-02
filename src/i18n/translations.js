@@ -12,7 +12,7 @@ export const translations = {
       tagline: 'כאן הסגנון פוגש אלגנטיות',
       sub: 'חיתוך וסטיילינג · טיפול שיער · צביעת שיער · חבילת VIP',
       bookAppointment: 'הזמן פגישה',
-      ourServices: 'שירותים שלנו',
+      gallery: 'גלריה שלנו',
     },
     services: {
       title: 'שירותים שלנו',
@@ -112,7 +112,7 @@ export const translations = {
       tagline: 'Where Style Meets Elegance',
       sub: 'Haircut & styling · Hair treatment · Hair coloring · VIP package',
       bookAppointment: 'Book Appointment',
-      ourServices: 'Our Services',
+      gallery: 'Gallery',
     },
     services: {
       title: 'Our Services',
@@ -212,7 +212,7 @@ export const translations = {
       tagline: 'Donde el Estilo se Encuentra con la Elegancia',
       sub: 'Corte y peinado · Tratamiento capilar · Coloración · Paquete VIP',
       bookAppointment: 'Reservar Cita',
-      ourServices: 'Nuestros Servicios',
+      gallery: 'Galería',
     },
     services: {
       title: 'Nuestros Servicios',
